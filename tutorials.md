@@ -10,7 +10,7 @@ CRYS is an acronym for "Crys Rebuild Your Structures", a crystal structure predi
    
 2. Unpack *examples.tar.xz*:
 
-   ```tar xJf examples.tar.xz```
+   ```unzip examples.zip```
 
    *ex01_BN_300GPa* shows how to obtain the structure of *BN* at 300 GPa.
 
