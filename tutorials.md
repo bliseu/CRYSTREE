@@ -1,6 +1,6 @@
-# CRYS
+# CRYSTREE
 ###### BY LI BIN, WRITTEN @ EDINBURGH
-CRYS is an acronym for "Crys Rebuild Your Structures", a crystal structure predictor based on machine learning.
+CRYSTREE is an acronym for "Crys Rebuild Your Structures Tree", a crystal structure predictor based on machine learning.
 
 ### Installation
 
