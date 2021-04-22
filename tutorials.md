@@ -1,6 +1,6 @@
 # CRYSTREE
 ###### BY LI BIN, WRITTEN @ EDINBURGH
-CRYSTREE is an acronym for "Crystree Rebuild Your Structures TREE", a crystal structure predictor based on machine learning.
+CRYSTREE is an acronym for "Crystal Tree"(宝树), a crystal structure predictor based on machine learning.
 
 ### Installation
 
