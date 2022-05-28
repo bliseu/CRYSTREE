@@ -237,4 +237,26 @@ CRYSTREE is an acronym for "Crystal Tree"(宝树), a crystal structure predictor
    }
    ```
 
-   
+  Sixuan Wu, **Bin Li\***, Zhi Chen, Yu Hou, Yan Bai, Xiaofeng Hao, Yeqian Yang, Shengli Liu, Jie Cheng, and Zhixiang Shi , "Phase transitions and superconductivity in ternary hydride Li2SiH6 at high pressures", Journal of Applied Physics 131, 065901 (2022) https://doi.org/10.1063/5.0080880
+   ```
+   @article{doi:10.1063/5.0080880,
+   author = {Wu,Sixuan  and Li,Bin  and Chen,Zhi  and Hou,Yu  and Bai,Yan  and Hao,Xiaofeng  and Yang,Yeqian  and Liu,Shengli  and Cheng,Jie  and Shi,Zhixiang },
+   title = {Phase transitions and superconductivity in ternary hydride Li2SiH6 at high pressures},
+   journal = {Journal of Applied Physics},
+   volume = {131},
+   number = {6},
+   pages = {065901},
+   year = {2022},
+   doi = {10.1063/5.0080880},
+
+   URL = { 
+           https://doi.org/10.1063/5.0080880
+    
+   },
+   eprint = { 
+           https://doi.org/10.1063/5.0080880
+    
+   }
+
+   }
+   ```
