@@ -184,7 +184,7 @@ CRYSTREE is an acronym for "Crystal Tree"(宝树), a crystal structure predictor
 
    ```convexhull```
    
-### Citation
+### Citations
 
    Miriam Peña-Alvarez*, **Bin Li**, Liam C. Kelsall, Jack Binns, Philip Dalladay-Simpson, Andreas Hermann, Ross T. Howie, and Eugene Gregoryanz*, Synthesis of Superconducting Cobalt Trihydride, J. Phys. Chem. Lett. 2020 11(15), 6420-6425.
 
