@@ -1,0 +1,43 @@
+#!/bin/sh
+
+#if [ -d "cars" ]; then
+if [ -f "input.txt" ]; then
+new_dirnum=`ls |grep results |cut -c 8- |awk 'BEGIN {max = 0} {if ($1+0 > max+0) max=$1} END {print max+1}'`; mkdir results${new_dirnum}
+orderlist=`cat -n sorted_output.txt | awk '{print $1}'`
+for jj in $orderlist;do
+ordernum=`sed -n "${jj}p" sorted_output.txt | awk '{print $2}'`
+cp cars/OPTMIZED_${ordernum}.cif cars/${jj}_OPTMIZED_${ordernum}.cif 2>/dev/null
+cp cars/OPTMIZED_${ordernum}_symmetry.cif cars/${jj}_OPTMIZED_${ordernum}_symmetry.cif 2>/dev/null
+done
+
+mv --backup=numbered step results${new_dirnum}/  >  tmp 2>/dev/null
+mv --backup=numbered *.log results${new_dirnum}/  >  tmp 2>/dev/null
+mv --backup=numbered *csv results${new_dirnum}/ >  tmp 2>/dev/null
+mv --backup=numbered init_genStructs.txt input.txt order.txt origin.txt output.txt sorted_output.txt eStep.txt volume_in.txt volume_out.txt results${new_dirnum}/  >  tmp 2>/dev/null
+mv --backup=numbered cars results${new_dirnum} >  tmp 2>/dev/null
+
+title1=$(basename `pwd`)
+echo "Compressing ${title1}/results${new_dirnum}......"
+tar cJf ${title1}_results${new_dirnum}.txz results${new_dirnum}
+fi
+
+rm -f core.* XDATCAR OUTCAR* OSZICAR PCDAT IBZKPT CONTCAR* DOSCAR EIGENVAL CHGCAR CHG WAVECAR vasprun.xml REPORT log INCAR* POSCAR* *.vasp tmp 2>/dev/null 
+
+read -n 1 -p $'Would you like to continue with a deep cleaning or exit? (C/e) \n' ans;
+ 
+case $ans in
+    c|C)
+        #sudo reboot;;
+        dirlist=`ls -R |grep / |sed 's/://' 2> /dev/null`
+        for ii in $dirlist;do
+        cd $ii
+        echo "cleaning $ii"
+        list=`ls OUTCAR_* 2> /dev/null`
+        for i in $list; do grep TOTEN $i |tail -n 1 >${i}_simple; mv ${i}_simple ${i}; done
+        cd -
+        done
+        ;; 
+    *)
+        exit;;
+esac
+
