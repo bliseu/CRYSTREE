@@ -1,4 +1,4 @@
-# CRYSTREE
+# CRYSTREE ![logo](logo/Crystree_color.png)
 
 An out-of-the-box crystal structure prediction tool based on the random forest method.
 
